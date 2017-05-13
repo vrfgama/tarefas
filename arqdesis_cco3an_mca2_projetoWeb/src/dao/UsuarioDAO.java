@@ -72,7 +72,7 @@ public class UsuarioDAO
 	      }
 	      catch(Exception ex)
 	      {
-	         ex.printStackTrace();   
+	         ex.printStackTrace();
 	      }
 	      
 	      usuario= new Usuario(id, nome, senha, cpf, horaEnt, horaSai, mudaTemp, perfil, cnpj);

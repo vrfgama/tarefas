@@ -12,7 +12,7 @@ public class UsuarioService
 	UsuarioDAO usuariodao= new UsuarioDAO();
 	
 	public boolean cadastrar(Usuario usuario)
-	{
+	{	
 		return usuariodao.cadastrar(usuario);
 	}
 	
