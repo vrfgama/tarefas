@@ -35,5 +35,15 @@ public class UsuarioService
 	{
 		return usuariodao.consultarTodos();
 	}
+	
+	public Usuario validar(Usuario u){
+		Usuario l= usuariodao.consultar(u.getId());
+		System.out.println("service validar  nome  "+l.getNome());
+		if(l.getSenha().equals(u.getSenha())){
+			return l;
+		}else{
+			return null;
+		}
+	}
 
 }
